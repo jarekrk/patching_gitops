@@ -14,6 +14,9 @@ steps:
         --platform managed \
         --allow-unauthenticated
 
+options:
+  logging: CLOUD_LOGGING_ONLY
+
 images:
   - 'gcr.io/$PROJECT_ID/todo-app:$COMMIT_SHA'
 
